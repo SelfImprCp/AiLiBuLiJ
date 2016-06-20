@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/my_enter_info"
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="@color/ailibuli_base_color"
+                android:orientation="vertical">
+
+
+                <org.kymjs.kjframe.widget.RoundImageView
+                    android:id="@+id/my_img_head"
+                    android:layout_width="@dimen/space_60"
+                    android:layout_height="@dimen/space_60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/my_text_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_toRightOf="@id/my_img_head"
+                    android:text="小爱"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:src="@drawable/enter_img_content" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/my_img_password"
+                        style="@style/my_item_image"
+                        android:src="@drawable/fitting_check_attention_red" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_img_password"
+                        android:text="修改密码"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@null" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_change_order_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/my_img_order_password"
+                        style="@style/my_item_image"
+                        android:src="@drawable/fitting_check_attention_red" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_img_order_password"
+                        android:text="修改交易密码"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@null" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_bank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/my_img_back_card"
+                        style="@style/my_item_image"
+                        android:src="@drawable/fitting_check_attention_red" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_img_back_card"
+                        android:text="银行卡管理"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="@null" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/my_img_feedback"
+                        style="@style/my_item_image"
+                        android:src="@drawable/fitting_check_attention_red" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_img_feedback"
+                        android:text="意见反馈"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@null" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/my_img_about"
+                        style="@style/my_item_image"
+                        android:src="@drawable/fitting_check_attention_red" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_img_about"
+                        android:text="关于我们"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+             <Button
+                 android:id="@+id/my_exit"
+                 android:layout_width="300px"
+    android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="@dimen/space_25"
+                 android:layout_height="80px"
+                 android:background="@drawable/round_corners_button"
+                 android:text="退出登录"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+    <View
+        android:id="@+id/myview_user"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#AF000000"
+        android:visibility="gone" />
+    <!-- #AF000000 70%透明灰 -->
+
+</LinearLayout>

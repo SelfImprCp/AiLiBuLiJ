@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/titlebar_text_title"
+            style="@style/titlebar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxEms="8"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/titlebar_img_back"
+            style="@style/titlebar_img"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:src="@drawable/return_main_menu" />
+
+        <ImageView
+            android:id="@+id/titlebar_img_menu"
+            style="@style/titlebar_img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="false"
+           
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/titlebar_tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 导航标题栏 -->
+
+    <cn.mofox.client.custom.PagerSlidingTabStrip
+        android:id="@+id/pager_tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/sliding_tab_strip_background"
+        app:allowWidthFull="true"
+        app:slidingBlock="@drawable/image_sliding_block" >
+    </cn.mofox.client.custom.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        style="@style/fill_fill"
+        android:layout_below="@id/pager_tabstrip" >
+    </android.support.v4.view.ViewPager>
+
+    <cn.mofox.client.custom.EmptyLayout
+        android:id="@+id/error_layout"
+        style="@style/fill_fill"
+        android:visibility="gone" />
+
+</RelativeLayout>

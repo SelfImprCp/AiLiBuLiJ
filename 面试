@@ -1,0 +1,159 @@
+
+
+1.Activity生命周期:C,S,R,P,S,D  Stop->Restart->Start.
+
+ Activity 四种启动方式:
+   a.standard 模式
+     这是默认模式，每次激活Activity时都会创建Activity实例，并放入任务栈中。
+   b.singleTop 模式
+     如果在任务的栈顶正好存在该Activity的实例，就重用该实例( 会调用实例的 onNewIntent()
+      )，否则就会创建新的实例并放入栈顶，即使栈中已经存在该Activity的实例，
+     只要不在栈顶，都会创建新的实例。
+   c.singleTask 模式
+          如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的 onNewIntent() )。
+          重用时，会让该实例回到栈顶，因此在它上面的实例将会被移出栈。
+          如果栈中不存在该实例，将会创建新的实例放入栈中。
+   d.singleInstance 模式
+      在一个新栈中创建该Activity的实例，并让多个应用共享该栈中的该Activity实例。
+      其效果相当于多个应用共享一个应用，不管谁激活该 Activity 都会进入同一个应用中。
+
+
+2.请介绍下ContentProvider是如何实现数据共享的。
+ Android提供了ContentProvider，一个程序可以通过实现一个ContentProvider
+ 的抽象接口将自己的数据完全暴露出去，而且ContentProviders是以类似数据库中
+ 表的方式将数据暴露，也就是说ContentProvider就像一个“数据库”。
+ 那么外界获取其提供的数据，也就应该与从数据库中获取数据的操作基本一样，
+ 只不过是采用URI来表示外界需要访问的“数据库”。
+ 外部访问通过ContentResolver去访问并操作这些被暴露的数据。
+
+
+
+
+3.Hybrid App（混合模式移动应用）是指介于web-app、native-app这两者之间的app，
+兼具“Native App良好用户交互体验的优势”和“Web App跨平台开发的优势”。
+
+
+
+
+4.自我介绍,技能特长,性能优化,内存优化,工作经历,项目经验.
+
+
+
+  Service是在一段不定的时间运行在后台，不和用户交互应用组件.
+  使用startService()方法启用服务，调用者与服务之间没有关连，即使调用者退出了，服务仍然运行。
+  使用bindService()方法启用服务，调用者与服务绑定在了一起，调用者一旦退出，服务也就终止。
+
+
+
+
+  静态注册：这种方法是在配置AndroidManifest.xml配置文件中注册，通过这种方式注册的广播为常驻型广播，
+  也就是说如果应用程序关闭了，有相应事件触发，程序还是会被系统自动调用运行
+  动态注册：这种方法是通过代码在.Java文件中进行注册。通过这种方式注册的广播为非常驻型广播，
+  即它会跟随Activity的生命周期，所以在Activity结束前我们需要调用unregisterReceiver(receiver)方法移除它
+
+
+
+
+  Broadcast的类型有两种：普通广播和有序广播。
+  Normal broadcasts（普通广播）：Normal broadcasts是完全异步的可以同一时间被所有的接收者接收到。消息的传递效率比较高。
+  Ordered broadcasts（有序广播）：Ordered broadcasts的接收者按照一定的优先级进行消息的接收
+
+
+
+  Android中提供了Intent机制来协助应用间的交互与通讯，
+  相比与显式Intent，隐式Intnet则含蓄了许多，它并不明确指出我们想要启动哪一个活动，而是指定一系列更为抽象的action和category等信息，
+  然后交由系统去分析这个Intent，并帮我们找出合适的活动去启动。
+
+
+  android 中五大布局:LinearLayout,RelativeLayout,FrameLayout,TableLayout,AbsoluteLayout,
+
+
+  android 中数据存储:使用ContentProvider存储数据；,文件,SharedPreferences  ,DB,网络
+
+
+  android 中动画:帧动画,补间动画,属性动画:改变的是对象的实际属性
+
+
+
+
+  Message：消息，其中包含了消息ID，消息处理对象以及处理的数据等，由MessageQueue统一列队，终由Handler处理。
+
+  Handler：处理者，负责Message的发送及处理。使用Handler时，需要实现handleMessage(Message msg)方法来对特定的Message进行处理，例如更新UI等。
+
+  MessageQueue：消息队列，用来存放Handler发送过来的消息，并按照FIFO规则执行。当然，存放Message并非实际意义的保存，而是将Message以链表的方式串联起来的，等待Looper的抽取。
+
+  Looper：消息泵，不断地从MessageQueue中抽取Message执行。因此，一个MessageQueue需要一个Looper。
+
+  Thread：线程，负责调度整个消息循环，即消息循环的执行场所。
+
+简单的说，Handler获取当前线程中的looper对象，looper用来从存放Message的MessageQueue中取出Message，
+再有Handler进行Message的分发和处理
+
+
+
+
+  AIDL:aidl是 Android Interface definition language的缩写,它是一种android内部进程通信接口的描述语言，通过它我们可以定义进程间的通信接口
+
+
+  ICP:interprocess communication :内部进程通信
+
+
+  android 多线程实现:实现Runnable接口,继承Thread 类,Handler,AsyncTask
+
+  android 通信:线程间通信 handler ,AsyncTask,进程间通信:AIDL,
+
+
+  android 分为四个层,Applications ,Application Framework,libraries, linux kernel,
+
+
+内存溢出和内存泄漏有什么区别？何时会产生内存泄漏？内存优化有哪些方法？
+ 内存溢出通俗理解就是软件（应用）运行需要的内存，超出了它可用的最大内存。
+  内存泄漏就是我们对某一内存空间的使用，使用完成后没有释放。
+    内存优化：Android中容易内存溢出的部分，就是图片的加载，我们可以使用图片的压缩加上使用
+    LruCache缓存的目的来控制图片所能够使用的内存。
+      还有对于比较耗资源的对象及时的关闭，例如Database Conn , 各种传感器 ， Service 等等。
+
+
+ 横竖屏切换时候Activity的生命周期。
+ 这个生命周期跟清单文件里的配置有关系
+ 1、不设置Activity的android:configChanges时，切屏会重新调用各个生命周期
+ 默认首先销毁当前activity，然后重新加载
+ Onpause onstop ondestory oncreate onstart onresume
+ 2、设置Activity的android:configChanges=”orientation|keyboardHidden”时，
+ 切屏不会重新调用各个生命周期，只会执行onConfigurationChanged方法
+
+
+
+1. Android dvm的进程和Linux的进程，应用程序的进程是否为同一个概念？
+
+DVM指dalivk的虚拟机。每一个Android应用程序都在它自己的进程中运行，
+都拥有一个独立的Dalvik虚拟机实例。
+而每一个DVM都是在Linux 中的一个进程，所以说可以认为是同一个概念。
+
+
+
+
+
+Service 与线程的关系:没有任何关系,Thread 的运行是独立的，也就是说当一个 Activity
+被 finish 之后，如果没有主动停止 Thread 或者 Thread 里的 run 方法没有执行完毕的话，
+Thread 也会一直执行。因此这里会出现一个问题：当 Activity 被 finish 之后，不再持有该
+Thread 的引用，也就是不能再控制该Thread。另一方面，没有办法在不同的 Activity 中对同一
+Thread 进行控制。，所有的Activity都可以与Service进行关联，然后可以很方便地操作其中的方法，
+即使Activity被销毁了，之后只要重新与Service建立关联，就又能够获取到原有的Service中Binder的实例。
+因此，使用Service来处理后台任务，Activity就可以放心地finish，
+完全不需要担心无法对后台任务进行控制的情况。
+
+
+ANR:Application Not Responding
+
+1.在5秒内没有响应输入的事件（例如，按键按下，屏幕触摸）
+2.BroadcastReceiver在10秒内没有执行完毕
+造成以上两点的原因有很多，比如在主线程中做了非常耗时的操作，比如说是下载，io异常等。
+
+如何避免ANR？
+1、运行在主线程里的任何方法都尽可能少做事情。
+2、应用程序应该避免在BroadcastReceiver里做耗时的操作或计算
+主要的解决办法自己最常用的就是不要在主线程中做耗时的操作，而应放在子线程中来实现
+
+
+

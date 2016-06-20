@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_main_tabcolor_normal">#FFFF</color>
+    <color name="text_main_tabcolor_select">#B81F4D</color>
+    <color name="main_tab_bottom_background_checkcolor">#FF6699</color>
+    <color name="main_tab_bottom_background_normalcolor">#212121</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="home_fragment_background_color">#ADBCC9</color>
+    <color name="focus_fragment_background_color">#C9D6DC</color>
+    <color name="focus_fragment_controls_color">#FFFFFF</color>
+    <color name="login_editer">#32FFFFFF</color>
+    <color name="black_color_30">#48000000</color>
+    <color name="focus_fragment_color_40">#99ffffff</color>
+    <color name="focus_fragment_color_60">#99000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_green">#40AA53</color>
+    <color name="main_gray">#9A9A9A</color>
+     
+    <color name="main_purple">#576B95</color>
+ 
+ 
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+    <color name="red_color">#FF0000</color>
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+ 
+    <color name="ui_dialog_list_text">#000000</color>
+    <color name="my_center_line">#8A979F</color>
+    <color name="common_red">#FF1D62</color>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_yellow">#FFBB00</color>
+    <color name="common_blue">#1CCCFE</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="focus_fragment_edittor_color">#869497</color>
+    <color name="my_edittor_line">#2A373F</color>
+    <color name="search_bg">#66FFFFFF</color>
+    <color name="gray_color">#999999</color>
+    <color name="yellow">#FFBB00</color>
+    <color name="store_goods_detail_bg">#88CED9DD</color>
+    <color name="grayness">#212121</color>
+    <color name="home_seach_bg_color">#88FFFFFF</color>
+    <color name="touming">#00FFFFFF</color>
+   
+ 
+  
+    
+    <!-- 基底颜色 -->
+    <color name="appbg">#F2F2F2</color>
+    <color name="ailibuli_base_color">#2a70ed</color>
+
+
+    <!-- Mofox blace -->
+    
+        <color name="ailibuli_black">#242424</color>
+
+  
+    <!-- 项目中一种灰色的用在折扣价，底部的一些标题 -->
+
+    <color name="ailibuli_huise">#999999</color>
+
+    <!-- 项目中用到的分隔线的颜色 ，， -->
+    <color name="mofox_fegese">#b3b3b3</color>
+
+     <!-- 粉红色 -->
+       <color name="mofox_fenhong">#ff1d62</color>
+ 
+    <!-- 登录按钮色 -->
+    <color name="green">#f3f3f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="look_whole">#2a70ed</color>
+    <color name="blue">#58a8f7</color>
+    <color name="reseda">#25ae5f</color>
+
+</resources>
