@@ -55,7 +55,7 @@ public class ImageUtils {
 
 	public final static String SDCARD_MNT = "/mnt/sdcard";
 	public final static String SDCARD = "/sdcard";
-
+	public static String JPG = ".jpg";
 	/** 请求相册 */
 	public static final int REQUEST_CODE_GETIMAGE_BYSDCARD = 0;
 	/** 请求相机 */
@@ -112,6 +112,44 @@ public class ImageUtils {
 			}
 		}
 	}
+
+
+
+	/**
+	 * 保存文件 到SD卡
+	 *
+	 * @param bm
+	 * @param fileName
+	 * @param path     :/mnt/sdcard/kelong/notice/head/
+	 * @throws IOException
+	 */
+	public static File saveBitmapSdCard(Bitmap bm, String path, String fileName)
+			throws IOException {
+		File dirFile = new File(path);
+		if (!dirFile.exists()) {// 文件夹不存在
+			dirFile.mkdirs();
+			File nullFile = new File(path + ".nomedia"); // 避免在系统相册看到
+			BufferedOutputStream bos1 = new BufferedOutputStream(
+					new FileOutputStream(nullFile));
+			bos1.flush();
+			bos1.close();
+		}
+		try {// 先删除
+			delelteFile(path, fileName + ".png");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		File myCaptureFile = new File(path + fileName + ".png");
+		BufferedOutputStream bos = new BufferedOutputStream(
+				new FileOutputStream(myCaptureFile));
+		bm.compress(Bitmap.CompressFormat.PNG, 80, bos); // 背景透明
+		// bm.compress(Bitmap.CompressFormat.JPEG, 80, bos); //背景黑色
+		bos.flush();
+		bos.close();
+		return myCaptureFile;
+	}
+
 
 	public static void saveBackgroundImage(Context ctx, String filePath,
 			Bitmap bitmap, int quality) throws IOException {
@@ -259,7 +297,7 @@ public class ImageUtils {
 	/**
 	 * 使用当前时间戳拼接一个唯一的文件名
 	 * 
-	 * @param format
+	 * @param
 	 * @return
 	 */
 	public static String getTempFileName() {
@@ -282,7 +320,7 @@ public class ImageUtils {
 	/**
 	 * 判断当前Url是否标准的content://样式，如果不是，则返回绝对路径
 	 * 
-	 * @param uri
+	 * @param
 	 * @return
 	 */
 	public static String getAbsolutePathFromNoStandardUri(Uri mUri) {
@@ -759,7 +797,7 @@ public class ImageUtils {
 	 * 获取图片路径 2014年8月12日
 	 *
 	 * @param uri
-	 * @param cursor
+	 * @param
 	 * @return E-mail:mr.huangwenwei@gmail.com
 	 */
 	public static String getImagePath(Uri uri, Activity context) {
@@ -1068,5 +1106,143 @@ public class ImageUtils {
 			return false;
 		}
 	}
+
+
+
+	/**
+	 * 同时保存大小头像 到SD卡
+	 */
+	public static boolean saveTwoIconToSD(Bitmap bigBitmap, Bitmap smallBitmap,
+										  String path, String fileName) throws IOException {
+		File dirFile = new File(path);
+		if (!dirFile.exists()) {// 文件夹不存在
+			dirFile.mkdirs();
+			File nullFile = new File(path + ".nomedia"); // 避免在系统相册看到
+			BufferedOutputStream bos1 = new BufferedOutputStream(
+					new FileOutputStream(nullFile));
+			bos1.flush();
+			bos1.close();
+		}
+		try {// 先删除
+			delelteFile(path, fileName + "-big.png");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		File bigFile = new File(path + fileName + "-big.png");
+		BufferedOutputStream bigBos = new BufferedOutputStream(
+				new FileOutputStream(bigFile));
+		bigBitmap.compress(Bitmap.CompressFormat.PNG, 80, bigBos); // 背景透明
+		bigBos.flush();
+		bigBos.close();
+		try {// 先删除
+			delelteFile(path, fileName + ".png");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		File smallFile = new File(path + fileName + ".png");
+		BufferedOutputStream smallBos = new BufferedOutputStream(
+				new FileOutputStream(smallFile));
+		smallBitmap.compress(Bitmap.CompressFormat.PNG, 80, smallBos); // 背景透明
+		smallBos.flush();
+		smallBos.close();
+		return true;
+	}
+
+
+
+	/**
+	 * @param bm
+	 * @param picName
+	 */
+//	public static void saveBitmap(Context context,Bitmap bm, String picName) {
+//
+//		FileUtil fileUtil = new FileUtil(context);
+//
+//		Log.e("", "保存图片");
+//		try {
+//			if (!fileUtil.isFileExist("")) {
+//				File tempf = fileUtil.createSDDir("");
+//			}
+//			File f = new File(FileUtil.SDPATH, picName + JPG);
+//			if (f.exists()) {
+//				f.delete();
+//			}
+//			FileOutputStream out = new FileOutputStream(f);
+//			bm.compress(Bitmap.CompressFormat.JPEG, 90, out);
+//			out.flush();
+//			out.close();
+//			Log.e("", "已经保存");
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+
+
+	/**
+	 * 判断文件是否存在
+	 *
+	 * @param name 文件名
+	 * @return 文件内容
+	 */
+	public static void delelteFile(String path, String name) throws Exception {
+		File file = new File(path, name);
+		if (file.exists()) {
+			file.delete();
+		}
+	}
+
+
+
+	/**
+	 * 向手机写图片
+	 *
+	 * @param buffer
+	 * @param folder
+	 * @param fileName
+	 * @return
+	 */
+	public static boolean writeFile(byte[] buffer, String folder,
+									String fileName) {
+		boolean writeSucc = false;
+
+		boolean sdCardExist = Environment.getExternalStorageState().equals(
+				android.os.Environment.MEDIA_MOUNTED);
+
+		String folderPath = "";
+		if (sdCardExist) {
+			folderPath = Environment.getExternalStorageDirectory()
+					+ File.separator + folder + File.separator;
+		} else {
+			writeSucc = false;
+		}
+
+		File fileDir = new File(folderPath);
+		if (!fileDir.exists()) {
+			fileDir.mkdirs();
+		}
+
+		File file = new File(folderPath + fileName);
+		FileOutputStream out = null;
+		try {
+			out = new FileOutputStream(file);
+			out.write(buffer);
+			writeSucc = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				out.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return writeSucc;
+	}
+
+
+
 
 }

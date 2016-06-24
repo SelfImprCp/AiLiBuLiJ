@@ -53,9 +53,9 @@
   
     
     <!-- 基底颜色 -->
-    <color name="appbg">#F2F2F2</color>
+    <color name="appbg">#F2F2F8</color>
     <color name="ailibuli_base_color">#2a70ed</color>
-
+    <color name="bg_main">#ff7f00</color>
 
     <!-- Mofox blace -->
     

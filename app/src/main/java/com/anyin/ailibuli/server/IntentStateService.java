@@ -9,7 +9,7 @@ import android.net.NetworkInfo;
 import com.anyin.ailibuli.event.IntentChangeEvent;
 import com.anyin.ailibuli.utils.LogCp;
 
-import org.greenrobot.eventbus.EventBus;
+import de.greenrobot.event.EventBus;
 
 
 /**

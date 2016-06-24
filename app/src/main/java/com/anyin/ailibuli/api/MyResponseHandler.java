@@ -6,83 +6,51 @@ import com.anyin.ailibuli.ui.dialog.BasicDialog;
 import com.anyin.ailibuli.utils.LogCp;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.kymjs.kjframe.http.HttpCallBack;
 
 
 /**
  * 统一的数据处理
- * 
+ *
  * @author Administrator
- * 
  */
 
-public abstract class MyResponseHandler extends AsyncHttpResponseHandler {
+public abstract class MyResponseHandler extends HttpCallBack {
 
-	// 加载框
-	private Dialog mDialog;
+    @Override
+    public void onSuccess(String t) {
+        super.onSuccess(t);
+        dataSuccess(t);
+    }
 
-	// 是否显示服务器返回的提示
-	// private boolean mShowMessage;
 
-	// 转化类
-	// private Response mRes;
+    @Override
+    public void onFailure(int errorNo, String strMsg) {
+        super.onFailure(errorNo, strMsg);
+        dataFailuer(errorNo, strMsg);
+    }
 
-	public MyResponseHandler(Dialog dialog) {
-		// TODO Auto-generated constructor stub
-		// this.mRes = res;
-		this.mDialog = dialog;
-		// this.mShowMessage = showMessage;
-	}
+    @Override
+    public void onFinish() {
+        super.onFinish();
+        dataFinish();
+    }
 
-	public void onSuccess(String arg0) {
+    /**
+     * 数据加载成功后调用
+     *
+     * @param res
+     */
+    public abstract void dataSuccess(String res)
+    ;
 
-		LogCp.i(LogCp.CP, MyResponseHandler.class + " 请求来的数据 -------> " + arg0);
+    /**
+     * @param
+     */
+    public abstract void dataFinish();
 
-		// mRes = GsonUtil.jsonStrToBean(arg0, mRes.getClass());
-		// if (mRes.getCode() == Response.SUCCESS) {
-		//
-
-		dataSuccess(arg0);
-
-		// } else {
-		// UIHelper.showToast(mRes.getMsg());
-		// }
-		//
-		// if (mShowMessage)
-		// UIHelper.showToast(mRes.getMsg());
-
-	}
-
-	public void onFailure(Throwable arg0) {
-		arg0.printStackTrace();
-		dataFailuer(arg0);
-	};
-
-	public void onFinish() {
-
-		BasicDialog.hideDialog(mDialog);
-		dataFinish();
-
-	};
-
-	/**
-	 * 数据加载成功后调用
-	 * 
-	 * @param res
-	 */
-	public abstract void dataSuccess(String res);
-
-	/**
-	 * 
-	 * @param
-	 */
-	public void dataFinish() {
-	};
-
-	/**
-	 * 
-	 * @param arg0
-	 */
-	public void dataFailuer(Throwable arg0) {
-
-	}
+    /**
+     * @param
+     */
+    public abstract void dataFailuer(int errorNo, String strMsg);
 }

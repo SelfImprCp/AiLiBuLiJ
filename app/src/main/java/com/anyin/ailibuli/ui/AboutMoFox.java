@@ -4,7 +4,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.anyin.ailibuli.R;
-import com.anyin.ailibuli.api.MoFoxApi;
 import com.anyin.ailibuli.base.BaseActivity;
 import com.anyin.ailibuli.custom.TitleBarView;
 import com.anyin.ailibuli.utils.UIHelper;

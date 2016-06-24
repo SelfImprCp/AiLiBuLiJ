@@ -1,6 +1,6 @@
 package com.anyin.ailibuli.base;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -11,12 +11,15 @@ import com.anyin.ailibuli.app.AppContext;
 import com.anyin.ailibuli.app.AppManager;
 import com.anyin.ailibuli.event.BaseEvent;
 import com.anyin.ailibuli.event.IntentChangeEvent;
+import com.anyin.ailibuli.event.LoginEvent;
 import com.anyin.ailibuli.utils.InternetUtil;
+import com.anyin.ailibuli.utils.LogCp;
 import com.anyin.ailibuli.utils.UIHelper;
 
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
+
 import org.kymjs.kjframe.KJActivity;
+
+import de.greenrobot.event.EventBus;
 
 
 /**
@@ -62,13 +65,18 @@ public class BaseActivity extends KJActivity {
     }
 
 
+    public void onEvent(LoginEvent event)
+    {
 
-    /**
-     * @param event
-     */
-    @Subscribe
-    public void onEvent(BaseEvent event) {
     }
+
+// public void onEvent(BaseEvent event)
+//{
+//
+//}
+
+
+
 
     /**
      * 子类复写，初始化UI

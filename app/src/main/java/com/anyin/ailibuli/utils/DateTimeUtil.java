@@ -288,7 +288,7 @@ public class DateTimeUtil {
 	/**
 	 * 根据不同时区，转换时间 2014年7月31日
 	 * 
-	 * @param time
+	 * @param
 	 * @return
 	 */
 	public static Date transformTime(Date date, TimeZone oldZone,

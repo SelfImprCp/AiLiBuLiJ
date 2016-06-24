@@ -3,6 +3,7 @@ package com.anyin.ailibuli.base;
 
 
 
+
 import android.app.ProgressDialog;
 import android.os.Bundle;
 
@@ -21,9 +22,9 @@ import com.anyin.ailibuli.ui.dialog.DialogControl;
 import com.anyin.ailibuli.utils.InternetUtil;
 import com.anyin.ailibuli.utils.UIHelper;
 
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 import org.kymjs.kjframe.ui.SupportFragment;
+
+import de.greenrobot.event.EventBus;
 
 
 /**
@@ -31,7 +32,7 @@ import org.kymjs.kjframe.ui.SupportFragment;
  *
  * @author kymjs (http://www.kymjs.com/)
  */
-public class BaseFragment extends Fragment implements
+public class BaseFragment extends SupportFragment implements
         BaseFragmentInterface {
 
     public static final int STATE_NONE = 0;
@@ -50,20 +51,28 @@ public class BaseFragment extends Fragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        // 注册 事件
+       EventBus.getDefault().register(this);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         this.mInflater = inflater;
-        // 注册 事件
-        EventBus.getDefault().register(this);
 
         View view = inflateView(getLayoutId());
-         //加载界面
+
+
+        //加载界面
         initView(view);
          // 处理数据
         initData();
+
+
+
         return view;
     }
 
@@ -79,6 +88,7 @@ public class BaseFragment extends Fragment implements
 
     @Override
     public void onDestroy() {
+// 取消注册EventBus
         EventBus.getDefault().unregister(this);
         super.onDestroy();
     }
@@ -90,13 +100,13 @@ public class BaseFragment extends Fragment implements
     }
 
 
-    /**
-     * @param event
-     */
-    @Subscribe
-    public void onEvent(BaseEvent event) {
-    }
 
+
+
+
+    public void onEvent(BaseEvent event) {
+
+    }
 
 
     /**
@@ -115,6 +125,11 @@ public class BaseFragment extends Fragment implements
 
     }
 
+    @Override
+    protected View inflaterView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
+        return null;
+    }
+
     /**
      *  子类直接复写这个方法,view, 对当前界面的数据进行处理
      */
@@ -122,5 +137,10 @@ public class BaseFragment extends Fragment implements
     public void initData() {
 
     }
+
+    public boolean onBackPressed() {
+        return false;
+    }
+
 
 }

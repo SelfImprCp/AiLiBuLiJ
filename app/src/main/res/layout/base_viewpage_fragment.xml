@@ -59,7 +59,7 @@
 
     <!-- 导航标题栏 -->
 
-    <cn.mofox.client.custom.PagerSlidingTabStrip
+    <com.anyin.ailibuli.custom.PagerSlidingTabStrip
         android:id="@+id/pager_tabstrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         android:background="@drawable/sliding_tab_strip_background"
         app:allowWidthFull="true"
         app:slidingBlock="@drawable/image_sliding_block" >
-    </cn.mofox.client.custom.PagerSlidingTabStrip>
+    </com.anyin.ailibuli.custom.PagerSlidingTabStrip>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
@@ -75,7 +75,7 @@
         android:layout_below="@id/pager_tabstrip" >
     </android.support.v4.view.ViewPager>
 
-    <cn.mofox.client.custom.EmptyLayout
+    <com.anyin.ailibuli.custom.EmptyLayout
         android:id="@+id/error_layout"
         style="@style/fill_fill"
         android:visibility="gone" />

@@ -3,7 +3,7 @@
     android:id="@+id/titlebar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/titlebar_height"
-    android:background="@color/white" >
+    android:background="@color/ailibuli_base_color" >
 
     <TextView
         android:id="@+id/titlebar_text_title"

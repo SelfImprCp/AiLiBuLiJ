@@ -28,7 +28,9 @@ import com.anyin.ailibuli.utils.DoubleClickExitHelper;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import static android.view.LayoutInflater.from;
+
+
+ import static android.view.LayoutInflater.from;
 
 /**
  * 应用主界面
@@ -59,6 +61,9 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
       //  client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+
+
     }
 
     public void initView() {

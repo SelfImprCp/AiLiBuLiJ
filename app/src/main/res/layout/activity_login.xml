@@ -1,48 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg" >
+    android:background="@color/appbg"
+    android:orientation="vertical">
 
-    <RelativeLayout
+
+    <com.anyin.ailibuli.custom.TitleBarView
         android:id="@+id/login_title"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
 
-        <ImageView
-            android:id="@+id/activity_login_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:padding="8dp"
-            android:src="@drawable/return_back_white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="登  录"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_sp_18" />
-    </RelativeLayout>
-
-    <cn.mofox.client.custom.KJScrollView
+    <com.anyin.ailibuli.custom.KJScrollView
         android:id="@+id/login_scroller"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_title" >
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/login_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/space_25"
-                android:src="@drawable/login_logo" />
+                android:background="@drawable/my_top_background" />
 
             <LinearLayout
                 android:id="@+id/login_edit_layout"
@@ -52,7 +35,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="30dp"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -61,7 +44,7 @@
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -81,10 +64,10 @@
                         android:layout_weight="1"
                         android:background="@null"
                         android:hint="@string/please_name"
-                        android:phoneNumber="true"
-                        android:singleLine="true"
                         android:maxLength="11"
-                        android:textColor="@color/white"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/ailibuli_black"
                         android:textSize="@dimen/edit_text_size_commen" />
 
                     <TextView
@@ -92,8 +75,8 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_marginRight="@dimen/space_12"
-                        android:visibility="gone"
-                        android:background="@drawable/ic_search_clear" />
+                        android:background="@drawable/ic_search_clear"
+                        android:visibility="gone" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -103,7 +86,7 @@
                     android:layout_marginTop="@dimen/space_20"
                     android:background="@drawable/login_layout_editor_bg"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -125,16 +108,17 @@
                         android:hint="@string/login_pwd"
                         android:inputType="textPassword"
                         android:singleLine="true"
-                     
-                        android:textColor="@color/white"
+
+                        android:textColor="@color/ailibuli_black"
                         android:textSize="@dimen/edit_text_size_commen" />
+
                     <TextView
                         android:id="@+id/pwd_delecte_all"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_marginRight="@dimen/space_12"
-                        android:visibility="gone"
-                        android:background="@drawable/ic_search_clear" />
+                        android:background="@drawable/ic_search_clear"
+                        android:visibility="gone" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -145,7 +129,7 @@
                 android:layout_alignLeft="@+id/login_edit_layout"
                 android:layout_alignRight="@+id/login_edit_layout"
                 android:layout_below="@+id/login_edit_layout"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/login_layout_bnt_white"
                 android:text="@string/login"
                 android:textColor="@android:color/black"
@@ -159,7 +143,7 @@
                 android:layout_alignRight="@+id/login_edit_layout"
                 android:layout_below="@+id/login_btn"
                 android:layout_marginTop="13dp"
-                android:gravity="center_vertical" >
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/registered_user"
@@ -170,18 +154,18 @@
                     android:enabled="true"
                     android:padding="2dp"
                     android:text="@string/find_password"
-                    android:textColor="@color/white"
+                    android:textColor="@color/ailibuli_base_color"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/forgot_password "
+android:id="@+id/find_password"
                     style="@style/loginEditText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:padding="2dp"
                     android:text="@string/phone_register"
-                    android:textColor="@color/white"
+                    android:textColor="@color/ailibuli_base_color"
                     android:textSize="15sp" />
             </RelativeLayout>
 
@@ -193,7 +177,7 @@
                 android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:visibility="gone" >
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="0dp"
@@ -227,7 +211,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:visibility="gone" >
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/img_weixin"
@@ -254,6 +238,6 @@
                     android:src="@drawable/login_qq" />
             </LinearLayout>
         </RelativeLayout>
-    </cn.mofox.client.custom.KJScrollView>
+    </com.anyin.ailibuli.custom.KJScrollView>
 
-</RelativeLayout>
+</LinearLayout>

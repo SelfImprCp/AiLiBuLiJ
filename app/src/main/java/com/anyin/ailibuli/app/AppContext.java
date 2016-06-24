@@ -1,26 +1,25 @@
 package com.anyin.ailibuli.app;
 
-import android.annotation.TargetApi;
 import android.app.Application;
 import android.app.Notification;
 
-import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
-import android.os.Build;
 
 
 import com.anyin.ailibuli.R;
 import com.anyin.ailibuli.api.ApiHttpClient;
 
+import com.anyin.ailibuli.db.MyDbUtil;
 import com.anyin.ailibuli.manage.UserManaage;
 import com.anyin.ailibuli.utils.ActivityManagerUtil;
 import com.anyin.ailibuli.utils.LogCp;
 import com.anyin.ailibuli.utils.SharePreferencesUitl;
 import com.anyin.ailibuli.utils.StringUtils;
-import com.loopj.android.http.AsyncHttpClient;
 
+
+import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.PersistentCookieStore;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -33,8 +32,17 @@ import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 
+import org.kymjs.kjframe.KJHttp;
 
 import java.io.File;
+import java.io.IOException;
+
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 
@@ -81,8 +89,8 @@ public class AppContext extends Application {
 
 
 
-
-		initHttp();
+      // 初始化网络 请求
+		ApiHttpClient.initHttp();
 
 		// 百度地图
 		// 在使用 SDK 各组间之前初始化 context 信息，传入 ApplicationContext
@@ -276,46 +284,6 @@ public class AppContext extends Application {
 		return info;
 	}
 
-	/**
-	 *
-	 */
-	private void initHttp() {
-		// 初始化网络请求
-		AsyncHttpClient client = new AsyncHttpClient();
-		PersistentCookieStore myCookieStore = new PersistentCookieStore(this);
-		client.setCookieStore(myCookieStore);
-		ApiHttpClient.setHttpClient(client);
 
-		LogCp.i(LogCp.CP, AppContext.class + "   初始化http 请求时设置 的cookie : "
-				+ UserManaage.getUserManaage().getCookie(this));
-
-		ApiHttpClient.setCookie(UserManaage.getUserManaage().getCookie(this));
-
-		// Bitmap缓存地址
-		// BitmapConfig.CACHEPATH = "MoFox/imagecache";
-	}
-	/**
-	 * 清除 cookie
-	 */
-	public void cleanCookie() {
-		SharePreferencesUitl.getSharePreferencesUitl(this).removeProperty(
-				AppConfig.CONF_COOKIE);
-	}
-
-	public double getLatitude() {
-		return latitude;
-	}
-
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
-
-	public double getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
-	}
 
 }

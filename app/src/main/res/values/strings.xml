@@ -9,11 +9,11 @@
     <string name="login_pwd">请输入您的密码</string>
     <string name="login">登  录</string>
     <string name="my_login">登录</string>
-    <string name="setting">登  录</string>
+
     <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
     <string name="find_password">注   册</string>
     <string name="my_register">注册</string>
-    <string name="phone_register">忘记密码？</string>
+    <string name="phone_register">找回密码</string>
     <string name="weixin_login">微信登录</string>
     <string name="other_login">第三方账号登录</string>
     <string name="please_password">请输入密码</string>
@@ -37,9 +37,9 @@
     <string name="quxiao_reason">取消原因：</string>
 
     <!-- 底部 -->
-    <string name="main_tab_home">首页</string>
-    <string name="main_tab_focus">动态</string>
-    <string name="main_tab_shopping">逛街</string>
+    <string name="main_tab_home">规划</string>
+    <string name="main_tab_focus">易选基</string>
+    <string name="main_tab_shopping">跟踪</string>
     <string name="main_tab_my">我的</string>
 
 

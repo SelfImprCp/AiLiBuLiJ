@@ -11,6 +11,7 @@ import com.anyin.ailibuli.utils.SharePreferencesUitl;
 import com.loopj.android.http.AsyncHttpClient;
 
 import org.kymjs.kjframe.KJDB;
+import org.kymjs.kjframe.KJHttp;
 import org.kymjs.kjframe.http.HttpConfig;
 
 import java.util.List;
@@ -46,27 +47,27 @@ public class UserManaage {
      */
     public void userLoginSuccessProcess(Context context, UserRes userRes) {
 
-        AsyncHttpClient client = ApiHttpClient.getHttpClient();
-        HttpContext httpContext = client.getHttpContext();
-        CookieStore cookies = (CookieStore) httpContext
-                .getAttribute(ClientContext.COOKIE_STORE);
-        if (cookies != null) {
-            String tmpcookies = "";
-            for (Cookie c : cookies.getCookies()) {
-
-                tmpcookies += (c.getName() + "=" + c.getValue()) + ";";
-            }
-//            LogCp.i(LogCp.CP, UserManaage.class + "登录成功后的 cookie:"
-//                    + tmpcookies);
-            // 保存cookie
-            UserManaage.getUserManaage().saveCookie(context, tmpcookies);
-
-            // 给http请求设置 cookie
-            ApiHttpClient.setCookie(UserManaage.getUserManaage().getCookie(
-                    AppContext.getInstance()));
-
-            HttpConfig.sCookie = tmpcookies;
-        }
+//        KJHttp client = ApiHttpClient.getHttpClient();
+//        HttpContext httpContext = client.getHttpContext();
+//        CookieStore cookies = (CookieStore) httpContext
+//                .getAttribute(ClientContext.COOKIE_STORE);
+//        if (cookies != null) {
+//            String tmpcookies = "";
+//            for (Cookie c : cookies.getCookies()) {
+//
+//                tmpcookies += (c.getName() + "=" + c.getValue()) + ";";
+//            }
+////            LogCp.i(LogCp.CP, UserManaage.class + "登录成功后的 cookie:"
+////                    + tmpcookies);
+//            // 保存cookie
+//            UserManaage.getUserManaage().saveCookie(context, tmpcookies);
+//
+//            // 给http请求设置 cookie
+//            ApiHttpClient.setCookie(UserManaage.getUserManaage().getCookie(
+//                    AppContext.getInstance()));
+//
+//            HttpConfig.sCookie = tmpcookies;
+//        }
 
         // 保存登录信息
        // UserManaage.getUserManaage().saveUserInfo(context, userRes.getMember());

@@ -2,6 +2,8 @@ package com.anyin.ailibuli.bean;
 
 
 
+import org.kymjs.kjframe.database.annotate.Id;
+
 import java.io.Serializable;
 
 
@@ -13,8 +15,12 @@ import java.io.Serializable;
  * @created 2012-3-21
  */
 
-public abstract class Entity implements Serializable {
+public   class Entity implements Serializable {
 
+
+    /**
+     *  如果子类是要往DB中存储，那么子类就要再写一个id，因为存的时候 ，字段拿不到父类的
+     */
 
     public int id;
 
@@ -26,6 +32,14 @@ public abstract class Entity implements Serializable {
     public void setId(int id) {
         this.id = id;
     }
+
+
+
+    /**
+     *  如果子类是要往DB中存储，那么子类就要再写一个id，因为存的时候 ，字段拿不到父类的
+     */
+
+
 
 
 }

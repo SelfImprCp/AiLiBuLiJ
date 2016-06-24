@@ -2,21 +2,20 @@ package com.anyin.ailibuli.main;
 
 
 import com.anyin.ailibuli.R;
-import com.anyin.ailibuli.fragment.FocusFragment;
-import com.anyin.ailibuli.fragment.HomeFragment;
-import com.anyin.ailibuli.fragment.MyFragment;
-import com.anyin.ailibuli.fragment.ShopFragment;
+
+
 
 public enum MainTab {
 
 	HOME(0, R.string.main_tab_home, R.drawable.selector_mine_home,
-			HomeFragment.class),
+			PlanFragment.class),
 
-	SHOPING(1, R.string.main_tab_shopping, R.drawable.selector_mine_shoping,
+	FOCUS(1, R.string.main_tab_focus, R.drawable.selector_mine_foce,
+			YiXuanJiFragment.class),
+	SHOPING(2, R.string.main_tab_shopping, R.drawable.selector_mine_shoping,
 			ShopFragment.class),
 
-	FOCUS(2, R.string.main_tab_focus, R.drawable.selector_mine_foce,
-			FocusFragment.class),
+
 
 	MY(3, R.string.main_tab_my, R.drawable.selector_mine_my, MyFragment.class);
 

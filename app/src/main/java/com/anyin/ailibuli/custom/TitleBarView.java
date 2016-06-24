@@ -106,5 +106,25 @@ public class TitleBarView extends RelativeLayout {
         titlebar_img_back.setOnClickListener(onClickListener);
     }
 
+    /**
+     *
+     */
+    public void  setTitleBackIsShow(int show)
+    {
+        switch (show)
+        {
+            case  View.VISIBLE:
+                titlebar_img_back.setVisibility(View.VISIBLE);
+                break;
+
+
+            case  View.GONE:
+                titlebar_img_back.setVisibility(View.GONE);
+                break;
+
+        }
+
+    }
+
 
 }

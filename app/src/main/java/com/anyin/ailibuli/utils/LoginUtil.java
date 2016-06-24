@@ -21,7 +21,7 @@ public class LoginUtil {
      *
      * @param
      */
-    private boolean checkLogin(EditText uMobile, EditText uPassWord) {
+    public static boolean checkLogin(EditText uMobile, EditText uPassWord) {
 
         if (!InternetUtil.hasInternetConnected()) {
             UIHelper.showToastShort(R.string.tip_network_error);
@@ -59,7 +59,7 @@ public class LoginUtil {
 
 
 
-    private boolean checkLoginName(EditText mEtName  ) {
+    public static boolean checkLoginName(EditText mEtName  ) {
 
          String str = mEtName.getText().toString();
         if (StringUtils.isEmpty(str)) {
@@ -93,7 +93,7 @@ public class LoginUtil {
      * @return
      */
 
-    private boolean checkLoginPass(EditText mEtName) {
+    public static boolean checkLoginPass(EditText mEtName) {
          String str = mEtName.getText().toString();
 
         if (StringUtils.isEmpty(str)) {

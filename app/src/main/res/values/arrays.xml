@@ -14,6 +14,23 @@
         <item>查看大头像</item>
     </string-array>
 
+    <string-array name="yi_xian_ji_array">
+        <item>自定义收益率</item>
+        <item>个性推荐</item>
+        <item>基金挑选</item>
+
+    </string-array>
+
+    <string-array name="kaihu_array">
+        <item>1.填写个人信息</item>
+        <item>2.关联银行卡</item>
+        <item>3.开户完成</item>
+
+    </string-array>
+
+
+
+
     <attr name="borderRadius" format="dimension" />
     <attr name="type">
         <enum name="circle" value="0" />

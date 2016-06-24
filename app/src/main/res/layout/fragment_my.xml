@@ -46,6 +46,7 @@
                     android:layout_marginLeft="@dimen/space_15"
                     android:layout_toRightOf="@id/my_img_head"
                     android:text="小爱"
+                    android:padding="@dimen/space_4"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_size_18" />
 
@@ -85,10 +86,9 @@
 
                 </com.zhy.autolayout.AutoRelativeLayout>
 
+
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@null" />
+                    style="@style/feng_ge_xian"></View>
 
 
                 <com.zhy.autolayout.AutoRelativeLayout
@@ -112,10 +112,7 @@
                 </com.zhy.autolayout.AutoRelativeLayout>
 
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@null" />
-
+                    style="@style/feng_ge_xian"></View>
 
                 <com.zhy.autolayout.AutoRelativeLayout
                     android:id="@+id/my_bank_card"
@@ -138,10 +135,9 @@
                 </com.zhy.autolayout.AutoRelativeLayout>
 
 
+
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="10px"
-                    android:background="@null" />
+                    style="@style/feng_ge_xian"></View>
 
 
                 <com.zhy.autolayout.AutoRelativeLayout
@@ -164,10 +160,9 @@
 
                 </com.zhy.autolayout.AutoRelativeLayout>
 
+
                 <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@null" />
+                    style="@style/feng_ge_xian"></View>
 
 
                 <com.zhy.autolayout.AutoRelativeLayout
