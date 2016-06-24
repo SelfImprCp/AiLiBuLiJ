@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="80px"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请输入真实姓名"
+                android:inputType="textPassword"
+                android:padding="@dimen/space_2"
+                android:singleLine="true"
+
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/edit_text_size_commen" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+
+            <EditText
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="80px"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="身份证号码"
+                android:inputType="textPassword"
+                android:padding="@dimen/space_2"
+                android:singleLine="true"
+
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/edit_text_size_commen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+            <EditText
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="80px"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="电子邮箱"
+                android:inputType="textPassword"
+                android:padding="@dimen/space_2"
+                android:singleLine="true"
+
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/edit_text_size_commen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+            <EditText
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="80px"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="设置交易密码(6-20位)"
+                android:inputType="textPassword"
+                android:padding="@dimen/space_2"
+                android:singleLine="true"
+
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/edit_text_size_commen" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+            <EditText
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="80px"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="再输入一次交易密码"
+                android:inputType="textPassword"
+                android:padding="@dimen/space_2"
+                android:singleLine="true"
+
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/edit_text_size_commen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_8"
+                android:text="请输入正确信息,完成后将不能修改"
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

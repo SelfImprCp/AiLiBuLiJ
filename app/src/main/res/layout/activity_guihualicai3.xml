@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/guihualicai3_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appbg"
+            android:orientation="vertical">
+
+
+
+        <TextView
+            style="@style/guihualicai_tag"
+            android:text="录入家庭年收支(3/6)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/transparent"></View>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="年  收  入" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:hint="如工资收入,奖金,分红等" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                style="@style/feng_ge_xian" />
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="年  支  出" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_12"
+                    android:hint="日常生活支出,但不包括投资" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <Button
+                android:id="@+id/guihualicai3_next"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@drawable/round_corners_button"
+                android:text="下一步"
+                android:layout_margin="@dimen/space_20"
+                android:gravity="center"
+
+                />
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+         </com.anyin.ailibuli.custom.KJScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/guihualicai4_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/guihualicai_tag"
+                android:text="选择理财目标(4/6)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/appbg"></View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+                android:text="选择你的理财目标,我们帮你规划未来"
+
+                android:textSize="@dimen/text_size_15" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/appbg"></View>
+
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                     android:orientation="vertical"
+                    android:layout_weight="1">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                          android:text="未选择"
+                         android:textColor="@color/ailibuli_black"
+                         android:textSize="@dimen/text_size_14"
+                         android:layout_gravity="center"
+
+                         />
+
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/guihualicai4_maiche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/space_8"
+                        android:background="@drawable/round_corners_button"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/login_icon_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="买车计划" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/guihualicai4_maifang"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/space_8"
+                        android:background="@drawable/round_corners_button"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/login_icon_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="购房计划" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/guihualicai4_zinujiaoyu"
+
+                        android:layout_margin="@dimen/space_8"
+                        android:background="@drawable/round_corners_button"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/login_icon_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="子女教育" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/guihualicai4_mengxiang"
+
+                        android:layout_margin="@dimen/space_8"
+                        android:background="@drawable/round_corners_button"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/login_icon_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="梦想计划" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+                  <View
+                      android:background="@color/appbg"
+                      android:layout_width="2px"
+
+                      android:layout_height="match_parent">
+
+                  </View>
+
+
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                     android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已选择"
+                        android:textColor="@color/ailibuli_black"
+                        android:textSize="@dimen/text_size_14"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+
+                        android:id="@+id/guihualicai4_yanglao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/space_8"
+                        android:background="@drawable/round_corners_button"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/login_icon_wx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="养老计划" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/guihualicai4_next"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_margin="@dimen/space_20"
+                android:background="@drawable/round_corners_button"
+                android:gravity="center"
+                android:text="下一步"
+
+                />
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        /
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

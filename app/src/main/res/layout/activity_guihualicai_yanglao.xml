@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+        android:id="@+id/guihualicai_yanglao_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_top_background" />
+
+
+        <com.anyin.ailibuli.custom.KJScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:drawableLeft="@drawable/fitting_check_attention_red"
+                    android:drawablePadding="@dimen/space_8"
+                    android:gravity="center_vertical"
+                    android:text="享受当下,退休生活悠闲过" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+
+                        android:text="您的年龄"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+                        android:text="退休年龄" />
+
+                    <EditText
+                        style="@style/guihualicai_edittext"
+                        android:hint="请输入您的退休年龄"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        style="@style/guihualicai_danwei"
+                        android:text="年" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+                        android:text="期望年生活费" />
+
+                    <EditText
+                        style="@style/guihualicai_edittext"
+                        android:hint="请输入你的期望年生活费"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        style="@style/guihualicai_danwei"
+                        android:text="万元" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_5"
+                    android:background="@color/appbg"></View>
+
+
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+                        android:text="是否有社保" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/guihualicai_yanglao_shebao_you"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_10"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/guihualicai_yanglaoimg_shebao_you"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/space_5"
+                                android:src="@drawable/btn_radio_on" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="有" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/guihualicai_yanglao_shebao_wu"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/guihualicai_yanglaoimg_shebao_wu"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/space_5"
+                                android:src="@drawable/btn_radio_off" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="无" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1px"
+                          android:background="@color/appbg"
+                         ></View>
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/guihualicai_yanglao_shebao_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/guihualicai_menu"
+                            android:text="" />
+
+                        <EditText
+                            style="@style/guihualicai_edittext"
+                            android:hint="请输入缴纳年限"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            style="@style/guihualicai_danwei"
+                            android:text="年" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/guihualicai_dream_save"
+
+                        android:layout_width="match_parent" android:layout_margin="8dp"
+                        android:layout_height="80px"  android:layout_weight="1"
+                        android:textColor="@color/ailibuli_black"
+                        android:background="@drawable/round_corners_button"
+                        android:text="保存" />
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.anyin.ailibuli.custom.KJScrollView>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</LinearLayout>

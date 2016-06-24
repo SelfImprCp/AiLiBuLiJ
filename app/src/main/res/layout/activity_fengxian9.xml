@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/fengxian9_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="@dimen/space_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+
+                android:text="9.投资有风险，在金融危机中，市场大幅波动，有些投资品的价格短期内可能大幅下跌。您能承受的投资组合下跌的极限是多少?(9/10)"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <TextView
+
+                android:id="@+id/fenxian9_01"
+
+                style="@style/fengxian_test_button"
+                android:text="无所谓，我能承受任何下跌，甚至跌幅超过50%" />
+
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="跌幅介于25%和50%之间" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="跌幅介于5%和25%之间" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="跌幅不超过5%" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="难以承受任何下跌" />
+
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

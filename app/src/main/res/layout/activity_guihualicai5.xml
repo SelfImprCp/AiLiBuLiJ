@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/guihualicai5_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appbg"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                style="@style/guihualicai_tag"
+                android:text="现金流分析(6/6)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+                android:textSize="@dimen/text_size_15"
+
+                android:text="选择你的理财目标,我们帮你预测未来"
+                />
+
+
+            <Button
+                android:id="@+id/guihualicai5_next"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@drawable/round_corners_button"
+                android:text="下一步"
+                android:layout_margin="@dimen/space_20"
+                android:gravity="center"
+
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>/
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

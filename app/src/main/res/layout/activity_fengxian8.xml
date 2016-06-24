@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/fengxian8_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="@dimen/space_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+
+                android:text="8.您能随时运用的现金，能够应付多长时间的家庭开支?(8/10)"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <TextView
+                android:id="@+id/fenxian8_01"
+
+                style="@style/fengxian_test_button"
+                android:text="2年以上" />
+
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="1到2年" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="6个月到1年" />
+
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="3个月到6个月" />
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="不到3个月" />
+
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

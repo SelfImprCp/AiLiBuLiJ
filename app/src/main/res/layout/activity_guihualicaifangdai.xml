@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/appbg"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/guihualicai2_fangdai_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appbg"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="房产名称" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+
+                    android:inputType="none"
+                    android:hint="请输入房产名称" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                style="@style/feng_ge_xian"
+                ></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="金       额" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+
+                    android:inputType="none"
+                    android:hint="请输入房产价值" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <View
+                style="@style/feng_ge_xian"
+                ></View>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="购房时间" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+
+                    android:inputType="none"
+                    android:hint="例如：2010-05-06" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="年" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <View style="@style/feng_ge_xian"></View>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/shifu_text"
+                    style="@style/guihualicai_menu"
+                    android:layout_centerVertical="true"
+                    android:text="是否分期" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_toRightOf="@id/shifu_text"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai2_fangdai_shifen"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai2_fangdai_shifen_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_on" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="是" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai2_fangdai_foufen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai2_fangdai_foufen_img"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="否" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <Button
+                android:id="@+id/guihualicai2_fangdai_finish"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="完成"
+                android:gravity="center"
+                android:layout_margin="@dimen/space_20"
+                android:background="@drawable/round_corners_button"
+                />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

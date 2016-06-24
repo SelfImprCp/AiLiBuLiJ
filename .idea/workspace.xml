@@ -23,59 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="35eecbfa-bbdc-4225-9b04-94bd69c0a789" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/api/MoFoxApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/db/MyDbManage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/fragment/FocusFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/fragment/HomeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/fragment/MyFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/fragment/ShopFragment.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/BuildConfig.java" afterPath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/Manifest.java" afterPath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/R.java" afterPath="$PROJECT_DIR$/app/src/main/gen/com/anyin/ailibuli/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/api/ApiHttpClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/api/ApiHttpClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/api/MyResponseHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/api/MyResponseHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/app/AppContext.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/app/AppContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/base/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/base/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/base/BaseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/base/BaseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/bean/Entity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/bean/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/bean/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/cache/CacheManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/cache/CacheManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/custom/TitleBarView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/custom/TitleBarView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/db/MyDbUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/db/MyDbUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/domian/SimpleBackPage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/domian/SimpleBackPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/main/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/main/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/main/MainTab.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/main/MainTab.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/manage/UserManaage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/manage/UserManaage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/server/IntentStateService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/server/IntentStateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/ui/AboutMoFox.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/ui/AboutMoFox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/DateTimeUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/DateTimeUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/FileUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/FileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/ImageUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/ImageUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/LoginUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/LoginUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/UIHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/anyin/ailibuli/utils/UIHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/login_layout_bnt_white.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_layout_bnt_white.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/base_viewpage_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/base_viewpage_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_titlebar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_titlebar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
     </list>
     <ignored path="AiLiBuLi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2898,7 +2846,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466760198290</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="添加fragment">
+      <created>1466762261993</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1466762261993</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3094,6 +3048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3101,6 +3056,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3371,6 +3327,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3378,6 +3335,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="e#189#212#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3403,6 +3363,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3439,6 +3402,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+          <folding>
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="e#1020#1021#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

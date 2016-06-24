@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/fengxian4_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="@dimen/space_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+
+                android:text="4.债券、股票、基金、专户理财,这四类投资品种您深入了解几种?(4/10)"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <TextView
+
+  android:id="@+id/fenxian4_01"
+
+                style="@style/fengxian_test_button"
+                android:text="全部都很了解" />
+
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="了解三种" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="4至6年" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="了解两种" />
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="了解一种" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="全都不了解" />
+
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

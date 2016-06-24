@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/guihualicai2_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appbg"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                style="@style/guihualicai_tag"
+                android:text="录入资产负债(2/6)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/transparent"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:src="@drawable/btn_radio_off" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="现金类资产"
+                    android:textColor="@color/ailibuli_black"
+                    android:textSize="@dimen/text_size_20" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+              <View
+                 style="@style/feng_ge_xian" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="存       款" />
+
+                <EditText
+                      style="@style/guihualicai_edittext"
+                    android:hint="请输入你的存款" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                style="@style/feng_ge_xian" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="货币基金" />
+
+                <EditText
+                     style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_12"
+                    android:hint="例如余额宝,理财通等货币基金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                style="@style/feng_ge_xian"
+                 android:layout_height="@dimen/space_10"
+                />
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:src="@drawable/btn_radio_off" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="投资类资产"
+                    android:textColor="@color/ailibuli_black"
+                    android:textSize="@dimen/text_size_20" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="基        金" />
+
+                <EditText android:textSize="@dimen/text_size_14"
+                    style="@style/guihualicai_edittext"
+                    android:hint="除货币基金外的其它基金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text=" A 股账户" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入股票资产" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="  P  2  P  " />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入互联网投资资金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="外        汇" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输外汇资产" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text=" 贵 金 属 " />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入贵金属资产" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="港股账户" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入港股资金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+            <View
+                style="@style/feng_ge_xian"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="美股账户" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入美股资金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="其它投资" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:hint="请输入其它资金" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+ <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/transparent"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/btn_radio_off" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_15"
+                android:text="负债"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_20" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/feng_ge_xian" />
+
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                 android:id="@+id/guihualicai2_fangdai"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="房        贷"/>
+
+
+                <TextView
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:text="点击录入你的房贷信息" />
+
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                     android:drawableLeft="@drawable/jiantou" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/guihualicai2_chedais"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="车        贷"/>
+
+                <TextView
+                    style="@style/guihualicai_edittext"
+                    android:textSize="@dimen/text_size_14"
+                    android:text="点击录入你的车贷信息" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:drawableLeft="@drawable/jiantou" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+             <Button
+                 android:id="@+id/guihualicai2_next"
+                 android:layout_width="match_parent"
+                 android:layout_height="80px"
+                  android:background="@drawable/round_corners_button"
+                 android:text="下一步"
+                 android:layout_margin="@dimen/space_20"
+                 android:gravity="center"
+
+                 />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/appbg"
+    android:layout_height="match_parent">
+
+     <com.anyin.ailibuli.custom.TitleBarView
+         android:id="@+id/feedback_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.anyin.ailibuli.custom.TitleBarView>
+
+     <com.zhy.autolayout.AutoLinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="400px">
+
+          <EditText
+              android:gravity="top"
+ android:padding="@dimen/space_4"
+              android:id="@+id/feedback_exit_content"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:hint="给我们点什么建议吧"
+              android:layout_margin="@dimen/space_8"
+              />
+
+     </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+</LinearLayout>

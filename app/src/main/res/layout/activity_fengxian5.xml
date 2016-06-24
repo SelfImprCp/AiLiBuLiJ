@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/fengxian5_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="@dimen/space_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+
+                android:text="5.您有多少年的证券投资经验?(5/10)"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <TextView
+                android:id="@+id/fenxian5_01"
+
+                style="@style/fengxian_test_button"
+                android:text="10年以上" />
+
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="5到10年" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="3至5年" />
+
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="1至3年" />
+
+            <TextView
+
+
+                style="@style/fengxian_test_button"
+                android:text="小于1年" />
+
+
+
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <com.anyin.ailibuli.custom.TitleBarView
+         android:id="@+id/bank_card_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+     <com.zhy.autolayout.AutoRelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+         >
+         <ListView
+             android:id="@+id/bank_card_listview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"></ListView>
+
+          <Button
+              android:id="@+id/bank_card_add"
+              android:layout_width="400px"
+              android:layout_height="80px"
+              android:background="@drawable/round_corners_button"
+              android:text="添加银行卡"
+              android:layout_centerHorizontal="true"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="@dimen/space_10"
+
+              />
+     </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

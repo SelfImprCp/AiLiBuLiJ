@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+        android:id="@+id/guihualicai_dream_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_top_background" />
+
+
+        <com.anyin.ailibuli.custom.KJScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:drawableLeft="@drawable/fitting_check_attention_red"
+                    android:drawablePadding="@dimen/space_8"
+                    android:gravity="center_vertical"
+                    android:text="提早规划，梦想越靠近" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+
+                        android:text="计划主题"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+                        android:text="计划年份" />
+
+                    <EditText
+                        style="@style/guihualicai_edittext"
+                        android:hint="实现时间"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        style="@style/guihualicai_danwei"
+                        android:text="年" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/appbg"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/guihualicai_menu"
+                        android:text="届时金额" />
+
+                    <EditText
+                        style="@style/guihualicai_edittext"
+                        android:hint="请输入你的梦想预算"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        style="@style/guihualicai_danwei"
+                        android:text="万元" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_5"
+                    android:background="@color/appbg"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/guihualicai_dream_add"
+                        android:layout_width="0px"
+                        android:layout_height="80px"
+                        android:layout_weight="1"
+                        android:textColor="@color/ailibuli_black"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/round_corners_button"
+                        android:text="继续添加" />
+
+                    <Button
+                        android:id="@+id/guihualicai_dream_save"
+
+                        android:layout_width="0px" android:layout_margin="8dp"
+                        android:layout_height="80px"  android:layout_weight="1"
+                        android:textColor="@color/ailibuli_black"
+                        android:background="@drawable/round_corners_button"
+                        android:text="保存" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.anyin.ailibuli.custom.KJScrollView>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</LinearLayout>

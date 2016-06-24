@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.anyin.ailibuli.custom.TitleBarView
+        android:id="@+id/guihualicai_maifang_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    </com.anyin.ailibuli.custom.TitleBarView>
+
+
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+ android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_top_background" />
+
+
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_15"
+                android:drawableLeft="@drawable/fitting_check_attention_red"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center_vertical"
+                android:text="提前规划住房没鸭梨哦~" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/appbg"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+
+                    android:text="买房年份"
+
+                    />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/appbg"></View>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="届时房价" />
+
+                <EditText
+                    style="@style/guihualicai_edittext"
+                    android:hint="请输入房价"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    style="@style/guihualicai_danwei"
+                    android:text="万元" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5"
+                android:background="@color/appbg"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="是否分期" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai_maifang_shifenqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai_fangimg_shifenqi"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_on" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="是" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai_maifang_bufenqi"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai_fangimg_bufenqi"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="否" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+
+                android:background="@color/appbg"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/guihualicai_maifang_fenqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="首付比例" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+
+                android:background="@color/appbg"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="贷款期限" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+
+                android:background="@color/appbg"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="年利率" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+
+                android:background="@color/appbg"></View>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/guihualicai_menu"
+                    android:text="还款方式" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai_maiche_benxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai_seximg_benxi"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_on" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="等额本息" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/guihualicai_maiche_benjin"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/guihualicai_seximg_benjin"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:src="@drawable/btn_radio_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="等额本金" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+</LinearLayout>

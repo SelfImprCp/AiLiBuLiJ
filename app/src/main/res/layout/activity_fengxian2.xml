@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical">
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+
+        android:id="@+id/fengxian2_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+    <com.anyin.ailibuli.custom.KJScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="@dimen/space_15"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+                android:text="2.在正常的市场情况下，恁对这项投资的收益有何期望?(2/10)"
+                android:textColor="@color/ailibuli_black"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <TextView
+
+                android:id="@+id/fenxian2_01"
+                android:textSize="@dimen/text_size_12"
+                style="@style/fengxian_test_button"
+                android:text="获得超越股市表现的高收益,同时愿意承受比股市更大的波动" />
+
+
+
+            <TextView
+
+                android:textSize="@dimen/text_size_12"
+                style="@style/fengxian_test_button"
+                android:text="获得和股市相近的收益,同时愿意承受与股市相近的波动" />
+
+
+            <TextView
+
+                android:textSize="@dimen/text_size_12"
+                style="@style/fengxian_test_button"
+                android:text="逊于股市表现,但能取得适度盈利,同时波动较小" />
+
+
+            <TextView
+
+                android:textSize="@dimen/text_size_12"
+                style="@style/fengxian_test_button"
+                android:text="长期收益高于定期存款,同时波动较小" />
+
+
+
+            <TextView
+
+                android:textSize="@dimen/text_size_12"
+                style="@style/fengxian_test_button"
+                android:text="收益保持高度稳定，但略有薄利" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.anyin.ailibuli.custom.KJScrollView>
+
+
+</LinearLayout>

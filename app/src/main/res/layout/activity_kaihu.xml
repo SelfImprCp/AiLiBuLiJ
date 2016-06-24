@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <com.anyin.ailibuli.custom.TitleBarView
+        android:id="@+id/kaihu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.anyin.ailibuli.custom.TitleBarView>
+
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+
+         android:orientation="horizontal"
+        android:layout_height="80px">
+
+
+         <com.zhy.autolayout.AutoLinearLayout
+             android:layout_width="0px"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:layout_height="match_parent">
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="74px"
+                  android:gravity="center"
+                   android:text="1.填写个人信息"
+                  android:textColor="@color/ailibuli_base_color"
+
+                  android:layout_marginBottom="@dimen/space_2"
+                  />
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/space_2"
+                   android:background="@color/ailibuli_base_color"
+                  ></View>
+
+         </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="74px"
+                android:gravity="center"
+                android:text="2.关联银行卡"
+                android:layout_marginBottom="@dimen/space_2"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_2"
+                android:background="@color/ailibuli_base_color"
+                ></View>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="74px"
+                android:gravity="center"
+                android:text="3.开户完成"
+                android:layout_marginBottom="@dimen/space_2"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_2"
+                android:background="@color/ailibuli_base_color"
+                ></View>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+     <com.zhy.autolayout.AutoFrameLayout
+         android:id="@+id/kaihu_frame"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     </com.zhy.autolayout.AutoFrameLayout>
+
+
+
+</LinearLayout>
